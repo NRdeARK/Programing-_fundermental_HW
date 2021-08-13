@@ -3,21 +3,13 @@
 using namespace std;
 int main()
 {
-    double a,max,min;
-    cin >> a;
-    max=a;
-    min=a;
-    for (int i = 0; i < 2; i++)
-    {
-        cin >> a;
-        if (a>max)
-        {
-            max=a;
-        }
-        if (a<max)
-        {
-            min=a;
-        }
-    }
+    double a[3] ,max,min;
+    cin >> a[0];
+    cin >> a[1];
+    cin >> a[2];
+    int n = sizeof(a) / sizeof(a[0]);
+    sort(a, a + n);
+    max=a[0];
+    min=a[2];
     cout<<min+max;
 }
