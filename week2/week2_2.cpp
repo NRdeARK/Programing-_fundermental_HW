@@ -13,11 +13,11 @@ int main()
         {
             max=a;
         }
-        if (a<max)
+        if (a<min)
         {
             min=a;
         }
     }
-    cout<<min+max;
+    cout<<max+min;
 }
 
