@@ -21,5 +21,4 @@ int main()
             cout << c[(a[i]+shift-'A')%26];
         }
     }
-    
 }
